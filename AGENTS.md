@@ -37,8 +37,7 @@ Run lint and typecheck before declaring any task done.
 
 ## Package manager
 
-- pnpm. `lab/` has its own `pnpm-workspace.yaml` and lockfile and is not part of
-  the site's workspace. `npx expo install` picks pnpm up on its own.
+- pnpm. `npx expo install` picks pnpm up on its own.
 
 ## Building with EAS
 

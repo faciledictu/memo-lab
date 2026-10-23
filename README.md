@@ -10,12 +10,10 @@ Go: в приложении есть нативные библиотеки (`rea
 
 ## Сборка
 
-Локально через Expo CLI, все команды — из папки `lab/`: в корне репозитория
-`pnpm android` запускает не скрипт, а Android CLI от Google, если он установлен.
-Нужны Node 22+ и pnpm (через `corepack enable`).
+Локально через Expo CLI, все команды — из корня репозитория. Нужны Node 22+ и
+pnpm (через `corepack enable`).
 
 ```sh
-cd lab
 pnpm install
 ```
 
@@ -91,5 +89,10 @@ keyboard-controller: `KeyboardProvider` меняет то, как Android при
 2. Экран в `src/tests/` и строка в `src/tests/index.ts`.
 3. Новая нативная библиотека — `npx expo install <пакет>` и новая сборка.
 
-`lab/` не входит в сборку сайта: свой `pnpm-workspace.yaml` и lockfile, корневой
-`tsconfig.json` его исключает; форматирование — общий Prettier из корня.
+Перед коммитом: `pnpm typecheck` и `pnpm format`.
+
+Приложение проверяет утверждения страниц
+[frontend-dev-memo](https://github.com/faciledictu/frontend-dev-memo) и раньше
+лежало в нём в папке `lab/` (история перенесена вместе с кодом). Баги, найденные
+здесь, уходят в репродюсеры на шаблоне React Native, по одному репозиторию на
+баг.

@@ -10,5 +10,4 @@ How to build it, run it and add a case: [README.md](README.md).
   `src/tests/index.ts`.
 - `expected` quotes or paraphrases the page; do not invent claims the page does
   not make.
-- Run `pnpm typecheck` and, from the repository root,
-  `pnpm prettier --write lab` before committing.
+- Run `pnpm typecheck` and `pnpm format` before committing.
